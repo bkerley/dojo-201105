@@ -1,0 +1,52 @@
+!!! 5
+%head
+  %title Bench Racing - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # Bench Racing
+        Given a list of cars, each with weight and horsepower figures, find the
+        power-to-weight ratio for each, and sort them from highest to lowest.
+
+        ## List of Cars
+        This list is formatted name of car, space, weight in pounds, space,
+        horsepower. I made some of these numbers up, so don't go car shopping
+        or gambling with them.
+
+        cars.txt:
+            mustang 3400 300
+            zonda 4000 680
+            mirage 2300 100
+            murciélago 3640 631
+            raptor 5860 411
+            fortwo 1800 70
+
+        ## Things to know
+
+        Reading a file into an array lines:
+            lines = File.read('file.txt').lines.to_a
+
+        Splitting a string on spaces:
+            words = "aeropress coffee" #=> ["aeropress", "coffee"]
+
+        Sorting an array based on some math:
+            sorted = lines.sort_by{|e| e[1].to_i + e[2].to_i }
+        
+        Printing an array with a space between each entry:
+            puts words.join(" ")
+
+        Printing an array with each entry on its own line:
+            puts lines
+
+        ## Template
+        benchracing.rb
+            # cars = each line from cars.txt
+            # sorted_cars = sort cars by
+              # car power / car weight
+              
+            # print the sorted_cars array
