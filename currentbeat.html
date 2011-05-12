@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>Current Beat - Miamirb Coding Dojo May 2011</title>
+  <link href='stylesheets/screen.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div class='gutter'>
+    <div class='welcome'>
+      <p><a href="index.html">Return to Main Page</a></p>
+    </div>
+    <div class='content'>
+      <h1>Current Beat</h1>
+      
+      <p>Get the current <a href="http://miamibeats.org/">Miami Internet Beat</a> and output
+      it.</p>
+      
+      <p>The current beat is machine-readable at:
+      <a href="http://miamibeats.org/beats.json">http://miamibeats.org/beats.json</a></p>
+      
+      <h2>Things to know</h2>
+      
+      <p>Loading the simple HTTP client and JSON parser:</p>
+      
+      <pre><code>require 'open-uri'&#x000A;require 'json'&#x000A;</code></pre>
+      
+      <p>Reading a URL as a string:</p>
+      
+      <pre><code>ip = open('http://bonzoesc.net/ipecho.php').read&#x000A;</code></pre>
+      
+      <p>Parsing a string of JSON into a Hash:</p>
+      
+      <pre><code>tweet = JSON.parse('{"text":"good food", "twitter_user_name":"bonzoesc"}')&#x000A;</code></pre>
+      
+      <p>Accessing a Hash:</p>
+      
+      <pre><code>tweet['twitter_user_name'] #=&gt; "bonzoesc"&#x000A;</code></pre>
+      
+      <h2>Template</h2>
+      
+      <p>currentbeat.rb</p>
+      
+      <pre><code># load the http client and json parser&#x000A;# read the beat information from the website&#x000A;# parse the beat information as json&#x000A;# print the beats from the json&#x000A;</code></pre>
+    </div>
+  </div>
+</body>
