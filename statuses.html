@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>Anonymous Statuses - Miamirb Coding Dojo May 2011</title>
+  <link href='stylesheets/screen.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div class='gutter'>
+    <div class='welcome'>
+      <p><a href="index.html">Return to Main Page</a></p>
+    </div>
+    <div class='content'>
+      <h1>Anonymous Statuses</h1>
+      
+      <p>Make a site like Twitter that allows users to anonymously post statuses,
+      and view a homepage full of recent statuses.</p>
+      
+      <p>Use <a href="http://rubyonrails.org/">Rails.</a></p>
+      
+      <h2>Things to know</h2>
+      
+      <p>(Lines starting with <code>&gt;</code> are from the command prompt.)</p>
+      
+      <p>Installing up-to-date Rails:</p>
+      
+      <pre><code>&gt; gem install rails&#x000A;</code></pre>
+      
+      <p>Creating a new app with Rails 3:</p>
+      
+      <pre><code>&gt; rails new statuses&#x000A;</code></pre>
+      
+      <p>Creating a status scaffold with id, content, created_at, and
+      updated_at columns:</p>
+      
+      <pre><code>&gt; rails generate scaffold status content:string&#x000A;</code></pre>
+      
+      <p>Running a Rails app:</p>
+      
+      <pre><code>&gt; rails server&#x000A;</code></pre>
+      
+      <p>Remove unwanted actions from the controller and the links to them from
+      views.</p>
+      
+      <p>Make the root point to the index action:</p>
+      
+      <pre><code># routes.rb&#x000A;root :to=&gt;'statuses#index'&#x000A;</code></pre>
+    </div>
+  </div>
+</body>

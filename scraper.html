@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Scraper - Miamirb Coding Dojo May 2011</title>
+  <link href='stylesheets/screen.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div class='gutter'>
+    <div class='welcome'>
+      <p><a href="index.html">Return to Main Page</a></p>
+    </div>
+    <div class='content'>
+      <h1>Photo Scraper</h1>
+      
+      <p>Grab the ten most recent photos from the <a href="http://blog.flickr.net/en">Flickr Blog</a>.</p>
+      
+      <h2>Things to know</h2>
+      
+      <p>(Lines starting with <code>&gt;</code> are from the command prompt.)</p>
+      
+      <p>Installing the <code>hpricot</code> HTML parser:</p>
+      
+      <pre><code>&gt; gem install hpricot&#x000A;</code></pre>
+      
+      <p>Loading the simple HTTP client and HTML parser:</p>
+      
+      <pre><code>require 'rubygems'&#x000A;require 'open-uri'&#x000A;require 'hpricot'&#x000A;</code></pre>
+      
+      <p>Parsing HTML:</p>
+      
+      <pre><code>doc = open('http://miamibeats.org/'){ |f| Hpricot(f) }&#x000A;</code></pre>
+      
+      <p>Finding elements by CSS rule:</p>
+      
+      <pre><code>doc.search('.rotationPart div')&#x000A;</code></pre>
+      
+      <p>Printing the href from every link:</p>
+      
+      <pre><code>doc.search('a'){|link| puts link['href'] }&#x000A;</code></pre>
+      
+      <p>The first five elements of an array:</p>
+      
+      <pre><code>%w{a b c d e f g}[0...5]&#x000A;</code></pre>
+      
+      <h2>Template</h2>
+      
+      <p>scraper.rb</p>
+      
+      <pre><code># load the http client and html parser&#x000A;# read the first page of the flickr blog&#x000A;# find the srcs to images in .entry-content divs&#x000A;# print ten srcs&#x000A;</code></pre>
+    </div>
+  </div>
+</body>
