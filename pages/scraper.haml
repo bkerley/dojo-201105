@@ -1,0 +1,43 @@
+!!! 5
+%head
+  %title Scraper - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # Photo Scraper
+        Grab the ten most recent photos from the [Flickr Blog](http://blog.flickr.net/en).
+
+        ## Things to know
+        (Lines starting with `>` are from the command prompt.)
+
+        Installing the `hpricot` HTML parser:
+            > gem install hpricot
+
+        Loading the simple HTTP client and HTML parser:
+            require 'rubygems'
+            require 'open-uri'
+            require 'hpricot'
+
+        Parsing HTML:
+            doc = open('http://miamibeats.org/'){ |f| Hpricot(f) }
+
+        Finding elements by CSS rule:
+            doc.search('.rotationPart div')
+
+        Printing the href from every link:
+            doc.search('a'){|link| puts link['href'] }
+
+        The first five elements of an array:
+            %w{a b c d e f g}[0...5]
+
+        ## Template
+        scraper.rb
+            # load the http client and html parser
+            # read the first page of the flickr blog
+            # find the srcs to images in .entry-content divs
+            # print ten srcs

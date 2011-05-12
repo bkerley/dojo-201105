@@ -1,0 +1,39 @@
+!!! 5
+%head
+  %title Anonymous Statuses - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # Anonymous Statuses
+        Make a site like Twitter that allows users to anonymously post statuses,
+        and view a homepage full of recent statuses.
+
+        Use [Rails.](http://rubyonrails.org/)
+
+        ## Things to know
+        (Lines starting with `>` are from the command prompt.)
+        
+        Installing up-to-date Rails:
+            > gem install rails
+
+        Creating a new app with Rails 3:
+            > rails new statuses
+
+        Creating a status scaffold with id, content, created_at, and
+        updated_at columns:
+            > rails generate scaffold status content:string
+
+        Running a Rails app:
+            > rails server
+
+        Remove unwanted actions from the controller and the links to them from
+        views.
+
+        Make the root point to the index action:
+            # routes.rb
+            root :to=>'statuses#index'
