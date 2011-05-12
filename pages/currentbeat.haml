@@ -1,0 +1,39 @@
+!!! 5
+%head
+  %title Current Beat - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # Current Beat
+        Get the current [Miami Internet Beat](http://miamibeats.org/) and output
+        it.
+
+        The current beat is machine-readable at:
+        [http://miamibeats.org/beats.json](http://miamibeats.org/beats.json)
+
+        ## Things to know
+
+        Loading the simple HTTP client and JSON parser:
+            require 'open-uri'
+            require 'json'
+
+        Reading a URL as a string:
+            ip = open('http://bonzoesc.net/ipecho.php').read
+
+        Parsing a string of JSON into a Hash:
+            tweet = JSON.parse('{"text":"good food", "twitter_user_name":"bonzoesc"}')
+
+        Accessing a Hash:
+            tweet['twitter_user_name'] #=> "bonzoesc"
+
+        ## Template
+        currentbeat.rb
+            # load the http client and json parser
+            # read the beat information from the website
+            # parse the beat information as json
+            # print the beats from the json
