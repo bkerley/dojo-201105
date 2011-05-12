@@ -1,0 +1,37 @@
+!!! 5
+%head
+  %title Trust Graph - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # Trust Graph
+        Given a graph of how much seven people trust each other, find the
+        most trustworthy path between all 21 possible pairs.
+
+        Trust is positive when trustworthy, negative when untrustworthy.
+        If a link isn't specified, assume it's negative infinity. Trust is
+        mutual/bidirectional.
+
+        ## Inputs
+        
+        Each line is a name, a trust rating, and a name.
+
+        trust.txt
+            Alice 5 Bob
+            Bob -5 Clyde
+            Clyde 10 Daniella
+            Daniella 3 Evan
+            Evan 6 Francine
+            Francine -10 Gladys
+            Gladys -10 Alice
+            Alice 10 Daniella
+            Alice 10 Clyde
+            Clyde 5 Gladys
+            Gladys 9 Evan
+            Francine 2 Bob
+            Bob 5 Gladys
