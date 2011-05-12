@@ -1,0 +1,46 @@
+!!! 5
+%head
+  %title FizzBuzz - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # FizzBuzz
+        For each number from 1 to 100, print 'Fizz' if the number is divisible
+        by 3, 'Buzz' if the number is divisible by 5, 'FizzBuzz' if the number
+        is divisible by both, or the number if divisible by neither.
+
+        ## Things to know
+        
+        for loop:    
+            for i in 1..10
+              puts i
+            end
+
+        if & else statements:
+            if true
+              puts "cool"
+            elsif 17
+              puts "way cool"
+            else
+              puts "not actually cool"
+            end
+
+        remainder:
+            5 % 4 #=> 1
+
+        ## Template
+        fizzbuzz.rb
+            # for numbers from 1 to 100
+              # if the number is divisible by 3 and 5
+                # print 'FizzBuzz'
+              # else, if the number is divisible by 3
+                # print 'Fizz'
+              # else, if the number is divisible by 5
+                # print 'Buzz'
+              # else, print the number
+            # end loop
