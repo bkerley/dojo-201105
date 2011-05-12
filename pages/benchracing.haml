@@ -32,7 +32,7 @@
             lines = File.read('file.txt').lines.to_a
 
         Splitting a string on spaces:
-            words = "aeropress coffee" #=> ["aeropress", "coffee"]
+            words = "aeropress coffee".split #=> ["aeropress", "coffee"]
 
         Sorting an array based on some math:
             sorted = lines.sort_by{|e| e[1].to_i + e[2].to_i }
