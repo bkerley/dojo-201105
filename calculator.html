@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title>Calculator - Miamirb Coding Dojo May 2011</title>
+  <link href='stylesheets/screen.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div class='gutter'>
+    <div class='welcome'>
+      <p><a href="index.html">Return to Main Page</a></p>
+    </div>
+    <div class='content'>
+      <h1>Four-function Calculator</h1>
+      
+      <p>Make a calculator that supports adding, subtracting, mutiplying, and
+      dividing of two integers: "5 + 3" should return "8".</p>
+      
+      <p>Assume all calculations will be number, space, operation, space, number.</p>
+      
+      <h2>Things to know</h2>
+      
+      <p>Reading user input:</p>
+      
+      <pre><code>entry = gets&#x000A;</code></pre>
+      
+      <p>Splitting a string on spaces:</p>
+      
+      <pre><code>words = "aeropress coffee".split #=&gt; ["aeropress", "coffee"]&#x000A;</code></pre>
+      
+      <p>Turning a string of numerals into an integer:</p>
+      
+      <pre><code>"5".to_i #=&gt; 5&#x000A;"123".to_i #=&gt; 123&#x000A;"bryce".to_i #=&gt; 0&#x000A;</code></pre>
+      
+      <p>Deconstructing assignment:</p>
+      
+      <pre><code>miami, heat = ["lebron", "james"]&#x000A;miami #=&gt; "lebron"&#x000A;heat #=&gt; "james"&#x000A;</code></pre>
+      
+      <h2>Template</h2>
+      
+      <p>calculator.rb</p>
+      
+      <pre><code># read a calculation from the user&#x000A;# split the calculation into left number, operation, right number&#x000A;# if the operation is '+'&#x000A;  # result is left + right&#x000A;# else if the operation is '-'&#x000A;  # result is left - right&#x000A;# etc.&#x000A;# print result&#x000A;</code></pre>
+    </div>
+  </div>
+</body>
