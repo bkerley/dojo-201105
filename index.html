@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <head>
-  <title>Welcome to Charleston</title>
+  <title>Miamirb Coding Dojo May 2011</title>
   <link href='stylesheets/screen.css' rel='stylesheet' type='text/css' />
 </head>
 <body>
   <div class='gutter'>
     <div class='welcome'>
-      <h1>Welcome to Charleston</h1>
-      <p>Charleston is a framework to build static HTML/CSS/JavaScript sites with
-      any combination of HTML, HAML, CSS, SASS, JavaScript, and CoffeeScript,
-      that's easy to put together and maintain.</p>
+      <h1>Welcome to the Miami Ruby Brigade Coding Dojo</h1>
+      
+      <p>Let's write some Ruby!</p>
+      
+      <h2>Install Ruby</h2>
+      
+      <ul>
+      <li>Windows: <a href="http://rubyinstaller.org/">http://rubyinstaller.org/</a></li>
+      <li>Mac: Use default Ruby</li>
+      <li>Linux: Use your distribution's Ruby</li>
+      </ul>
+      
+      
+      <h2>Editors</h2>
+      
+      <h3>Simple</h3>
+      
+      <p>These are already installed.</p>
+      
+      <ul>
+      <li>Notepad - Windows</li>
+      <li>TextEdit - Mac, set it to plain text mode</li>
+      <li>gEdit - GNOME</li>
+      <li>nano - console</li>
+      </ul>
+      
+      
+      <h3>GUI</h3>
+      
+      <p>Easy-to-use, have syntax highlighting.</p>
+      
+      <ul>
+      <li><a href="http://intype.info/home/index.php">Intype</a> - Windows</li>
+      <li><a href="http://macromates.com/">TextMate</a> - Mac</li>
+      <li>gEdit - GNOME</li>
+      </ul>
+      
+      
+      <h3>Traditional</h3>
+      
+      <p>These are difficult to get started with.</p>
+      
+      <ul>
+      <li><a href="http://www.vim.org/">Vim</a></li>
+      <li><a href="http://www.gnu.org/software/emacs/">Emacs</a></li>
+      </ul>
     </div>
-    <h2>Let's get started!</h2>
-    <ol>
-    <li>I'm assuming you've run <code>charleston my_project</code> and are now looking
-    at a sample page.</li>
-    <li>Edit <code>pages/index.haml</code>, and create new HTML or HAML files in the <code>pages</code>
-    directory to make new pages.</li>
-    <li>Edit <code>stylesheets/screen.sass</code>, and create new CSS or SASS files in
-    the <code>stylesheets</code> directory to make new stylesheets.</li>
-    <li>Edit and create JavaScript or CoffeeScript files in the <code>javascripts</code>
-    directory to make new script files.</li>
-    <li>Add images to the <code>images</code> directory if you want.</li>
-    <li>When you want to build the site, run <code>rake</code> and it will be created
-    in the <code>output</code> directory.</li>
-    </ol>
-    <h2>Where to Put Files</h2>
-    <table id='where_to_put'>
-      <thead>
-        <tr>
-          <th>Class</th>
-          <th>Format</th>
-          <th>Inputs</th>
-          <th>Outputs</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Page</td>
-          <td>HTML</td>
-          <td class='in'>pages/*.html</td>
-          <td class='out'>output/*.html</td>
-        </tr>
-        <tr>
-          <td>Page</td>
-          <td>HAML</td>
-          <td class='in'>pages/*.haml</td>
-          <td class='out'>output/*.html</td>
-        </tr>
-        <tr>
-          <td>Stylesheet</td>
-          <td>CSS</td>
-          <td class='in'>stylesheets/*.css</td>
-          <td class='out'>output/stylesheets/*.css</td>
-        </tr>
-        <tr>
-          <td>Stylesheet</td>
-          <td>SASS</td>
-          <td class='in'>stylesheets/*.sass</td>
-          <td class='out'>output/stylesheets/*.css</td>
-        </tr>
-        <tr>
-          <td>Script</td>
-          <td>JavaScript</td>
-          <td class='in'>javascripts/*.js</td>
-          <td class='out'>output/javascripts/*.js</td>
-        </tr>
-        <tr>
-          <td>Script</td>
-          <td>CoffeeScript</td>
-          <td class='in'>javascripts/*.coffee</td>
-          <td class='out'>output/javascripts/*.js</td>
-        </tr>
-        <tr>
-          <td>Image</td>
-          <td>Any format</td>
-          <td class='in'>images/*</td>
-          <td class='out'>output/images/*</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>What Not To Do</h2>
-    <ul>
-    <li>Don't make any direct edits to the "output" directory. These files
-    get clobbered when you update the source files.</li>
-    </ul>
-    <h2>More information</h2>
-    <p>Source code is available and forkable on the
-    <a href="http://github.com/bkerley/charleston">Charleston Github repository</a>.
-    Thanks in advance for your contributions and well-tested patches.</p>
-    
-    <p>Charleston is Copyright &copy; 2010 by Bryce Kerley. Please see the
-    license included with this software, or in the <a href="http://github.com/bkerley/charleston/blob/master/LICENSE">Charleston Github
-    repository</a>.</p>
+    <div class='content'>
+      <h1>Starting Out</h1>
+      
+      <h2><a href="fizzbuzz.html">FizzBuzz</a></h2>
+      
+      <p>For each number from 1 to 100, print 'Fizz' if the number is divisible
+      by 3, 'Buzz' if the number is divisible by 5, 'FizzBuzz' if the number
+      is divisible by both, or the number if divisible by neither.</p>
+      
+      <h2>Bench Racing</h2>
+      
+      <p>Given a list of cars, each with weight and horsepower figures, find the
+      power-to-weight ratio for each, and sort them from highest to lowest.</p>
+      
+      <h2>Four-function Calculator</h2>
+      
+      <p>Make a calculator that supports adding, subtracting, mutiplying, and
+      dividing of two integers: "5 + 3" should return "8".</p>
+      
+      <h1>Use The Web</h1>
+      
+      <h2>Current Beat</h2>
+      
+      <p>Get the current <a href="http://miamibeats.org/">Miami Internet Beat</a> and output
+      it.</p>
+      
+      <h2>Anonymous Statuses</h2>
+      
+      <p>Make a site like Twitter that allows users to anonymously post statuses,
+      and view a homepage full of recent statuses.</p>
+      
+      <h2>Photo Scraper</h2>
+      
+      <p>Grab the ten most recent photos from the <a href="http://blog.flickr.net/en">Flickr Blog</a>.</p>
+      
+      <h1>Algorithms</h1>
+      
+      <h2>Pages per Pound</h2>
+      
+      <p>You're about to get on a long flight, but you accidentally left your
+      coat, iPad, Kindle, and your collection of cereal-box backs at the hotel.
+      You have £10, room for six magazines, and a list of magazines. Pick the
+      six magazines with the most pages per dollar so you don't die of boredom.</p>
+      
+      <h2>Welcome To My World</h2>
+      
+      <p>You have a list of six meetup attendees and their coordinates, and three
+      potential meetup locations and their coordinates. Find the location that
+      minimizes the distance everyone has to fly in their Delorean DMC-12s
+      that don't need roads.</p>
+      
+      <h2>Trust Graph</h2>
+      
+      <p>Given a graph of how much seven people trust each other, find the
+      most trustworthy path between all 21 possible pairs.</p>
+    </div>
   </div>
-  <script src='http://prototypejs.org/assets/2010/5/13/prototype.js' type='text/javascript'></script>
-  <script src='javascripts/example.js' type='text/javascript'></script>
 </body>
