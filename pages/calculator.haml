@@ -1,0 +1,45 @@
+!!! 5
+%head
+  %title Calculator - Miamirb Coding Dojo May 2011
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+%body
+  .gutter
+    .welcome
+      :markdown
+        [Return to Main Page](index.html)
+    .content
+      :markdown
+        # Four-function Calculator
+        Make a calculator that supports adding, subtracting, mutiplying, and
+        dividing of two integers: "5 + 3" should return "8".
+
+        Assume all calculations will be number, space, operation, space, number.
+
+        ## Things to know
+        
+        Reading user input:
+            entry = gets
+
+        Splitting a string on spaces:
+            words = "aeropress coffee".split #=> ["aeropress", "coffee"]
+
+        Turning a string of numerals into an integer:
+            "5".to_i #=> 5
+            "123".to_i #=> 123
+            "bryce".to_i #=> 0
+
+        Deconstructing assignment:
+            miami, heat = ["lebron", "james"]
+            miami #=> "lebron"
+            heat #=> "james"
+
+        ## Template
+        calculator.rb
+            # read a calculation from the user
+            # split the calculation into left number, operation, right number
+            # if the operation is '+'
+              # result is left + right
+            # else if the operation is '-'
+              # result is left - right
+            # etc.
+            # print result
