@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Bench Racing - Miamirb Coding Dojo May 2011</title>
+  <link href='stylesheets/screen.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div class='gutter'>
+    <div class='welcome'>
+      <p><a href="index.html">Return to Main Page</a></p>
+    </div>
+    <div class='content'>
+      <h1>Bench Racing</h1>
+      
+      <p>Given a list of cars, each with weight and horsepower figures, find the
+      power-to-weight ratio for each, and sort them from highest to lowest.</p>
+      
+      <h2>List of Cars</h2>
+      
+      <p>This list is formatted name of car, space, weight in pounds, space,
+      horsepower. I made some of these numbers up, so don't go car shopping
+      or gambling with them.</p>
+      
+      <p>cars.txt:</p>
+      
+      <pre><code>mustang 3400 300&#x000A;zonda 4000 680&#x000A;mirage 2300 100&#x000A;murciélago 3640 631&#x000A;raptor 5860 411&#x000A;fortwo 1800 70&#x000A;</code></pre>
+      
+      <h2>Things to know</h2>
+      
+      <p>Reading a file into an array lines:</p>
+      
+      <pre><code>lines = File.read('file.txt').lines.to_a&#x000A;</code></pre>
+      
+      <p>Splitting a string on spaces:</p>
+      
+      <pre><code>words = "aeropress coffee" #=&gt; ["aeropress", "coffee"]&#x000A;</code></pre>
+      
+      <p>Sorting an array based on some math:</p>
+      
+      <pre><code>sorted = lines.sort_by{|e| e[1].to_i + e[2].to_i }&#x000A;</code></pre>
+      
+      <p>Printing an array with a space between each entry:</p>
+      
+      <pre><code>puts words.join(" ")&#x000A;</code></pre>
+      
+      <p>Printing an array with each entry on its own line:</p>
+      
+      <pre><code>puts lines&#x000A;</code></pre>
+      
+      <h2>Template</h2>
+      
+      <p>benchracing.rb</p>
+      
+      <pre><code># cars = each line from cars.txt&#x000A;# sorted_cars = sort cars by&#x000A;  # car power / car weight&#x000A;&#x000A;# print the sorted_cars array&#x000A;</code></pre>
+    </div>
+  </div>
+</body>
